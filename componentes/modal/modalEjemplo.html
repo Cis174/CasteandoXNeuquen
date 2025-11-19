@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÚLTIPLES MODALES</title>
+    <link rel="stylesheet" href="modal.css">
+    <script src="modal.js" defer></script>
+    
+    <!--*************** COPIAR RUTA ***************-->
+    <!-- Configurar ruta en caso de que corresponda -->
+    <link rel="stylesheet" href="componentes/modal/modal.css">
+    <script src="componentes/modal/modal.js" defer></script>
+    <!--*************** COPIAR RUTA ***************-->
+</head>
+
+<body>
+    <!--*************** COPIAR DESDE ACA ***************-->
+    <!-- Botón para Modal 1 -->
+    <button class="modal-trigger" onclick="openModal('modal1')">
+        Modal de Información
+    </button>
+
+    <!-- Botón para Modal 2 -->
+    <button class="modal-trigger" onclick="openModal('modal2')">
+        Modal de Éxito
+    </button>
+
+    <!-- Botón para Modal 3 -->
+    <button class="modal-trigger" onclick="openModal('modal3')">
+        Modal de Advertencia
+    </button>
+
+    <!-- MODAL 1: Información -->
+    <div id="modal1" class="modal" onclick="closeModalOutside(event, 'modal1')">
+        <div class="modal-content info">
+            <button class="modal-close" onclick="closeModal('modal1')">×</button>
+            <h2>📘 Información Importante</h2>
+            <p>Este es el primer modal de ejemplo. Puedes usarlo para mostrar información general.</p>
+            <p>Haz clic en la X o fuera de la ventana para cerrar.</p>
+        </div>
+    </div>
+
+    <!-- MODAL 2: Éxito -->
+    <div id="modal2" class="modal" onclick="closeModalOutside(event, 'modal2')">
+        <div class="modal-content success">
+            <button class="modal-close" onclick="closeModal('modal2')">×</button>
+            <h2>✅ ¡Operación Exitosa!</h2>
+            <p>Este modal muestra un mensaje de éxito.</p>
+            <p>Ideal para confirmaciones de acciones completadas.</p>
+        </div>
+    </div>
+
+    <!-- MODAL 3: Advertencia -->
+    <div id="modal3" class="modal" onclick="closeModalOutside(event, 'modal3')">
+        <div class="modal-content warning">
+            <button class="modal-close" onclick="closeModal('modal3')">×</button>
+            <h2>⚠️ Advertencia</h2>
+            <p>Este es un modal de advertencia.</p>
+            <p>Úsalo para alertar al usuario sobre algo importante.</p>
+        </div>
+    </div>
+    <!-- *************** HASTA ACA *************** -->
+</body>
+
+</html>

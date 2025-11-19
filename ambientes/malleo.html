@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/DIPLI/mi_pagina.css" />
+    <link rel="stylesheet" href="/DIPLI/componentes/tabs/tab.css" />
+    <script src="/DIPLI/componentes/tabs/tab.js"></script>
+    <title>Casteando X Neuquén</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/DIPLI/mi_pagina.html"> INICIO </a>
+      <a href="/DIPLI/modalidades.html">MODALIDADES DE PESCA</a>
+      <a class="navactiva" href="/DIPLI/ambientes.html">AMBIENTES DE PESCA</a>
+      <a href="/DIPLI/links.html">ESPECIES DE INTERES</a>
+      <a href="/DIPLI/contacto.html">FORO/CONTACTO</a>
+    </nav>
+    <br />
+    <a href="/DIPLI/ambientes.html" id="botonatras">Ir atrás</a>
+    <div class="component">
+      <div class="tabs-container">
+        <div class="tabs-nav">
+          <!-- MODIFICAR AQUÍ: Cambia los nombres de las pestañas -->
+          <button class="tab-btn active" onclick="openTab(event, 'tab1')">
+            Cómo llegar
+          </button>
+          <!-- SECCIÓN 1 -->
+          <button class="tab-btn" onclick="openTab(event, 'tab2')">
+            Especies
+          </button>
+          <!-- SECCIÓN 2 -->
+          <button class="tab-btn" onclick="openTab(event, 'tab3')">
+            Modalidades permitidas
+          </button>
+          <!-- SECCIÓN 3 -->
+          <!-- FIN MODIFICAR -->
+        </div>
+
+        <!-- MODIFICAR AQUÍ: Cambia el contenido de cada pestaña -->
+
+        <!-- SECCIÓN 1 -->
+        <div id="tab1" class="tab-content active">
+          <h3>Cómo llegar al Rio Malleo</h3>
+          <p>
+            El río Malleo está dentro del Parque Nacional Lanín, a sólo 30km de
+            Junín de los Andes. <br />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24552.071377982185!2d-71.16508103604104!3d-39.71698219689822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613d19f1d31ff17%3A0xf0e57d507cf40a65!2sR%C3%ADo%20Malleo!5e0!3m2!1ses!2sar!4v1762815238839!5m2!1ses!2sar"
+              width="100%"
+              height="300"
+              style="border: 0; margin: 10px; padding: 10px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </p>
+        </div>
+        <!-- SECCIÓN 2 -->
+        <div id="tab2" class="tab-content">
+          <h3>Especies que lo habitan</h3>
+          <br />
+          <div class="especies">
+            <ul style="line-height: 2">
+              <li>Trucha Arcoiris</li>
+              <li>Trucha Marrón</li>
+            </ul>
+          </div>
+        </div>
+        <!-- SECCIÓN 3 -->
+        <div id="tab3" class="tab-content">
+          <h3>Modalidades</h3>
+          <p>
+            <a href="/DIPLI/modalidades.html/#mosca" target="_blank"
+              >Fly casting</a
+            >
+            solamente.
+          </p>
+        </div>
+        <!-- FIN MODIFICAR -->
+      </div>
+    </div>
+
+    <footer>
+      <b
+        >Alumnos: Carlos Iván Simon, Romina Mabel Candiano. (Codecrafters
+        R&C)</b
+      >
+    </footer>
+  </body>
+</html>

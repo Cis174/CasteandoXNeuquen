@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABS</title>
+    <script src="tab.js"></script>
+    <link rel="stylesheet" href="tab.css">
+
+    <!--*************** COPIAR RUTA ***************-->
+    <!-- Configurar ruta en caso de que corresponda -->
+    <link rel="stylesheet" href="/componentes/tabs/tab.css">
+    <script src="/componentes/tabs/tab.js" defer></script>
+    <!--*************** COPIAR RUTA ***************-->
+</head>
+
+<body>
+    <!-- COMPONENTE 4: TABS -->
+    <div class="component">
+        <div class="tabs-container">
+            <div class="tabs-nav">
+                <!-- MODIFICAR AQUÍ: Cambia los nombres de las pestañas -->
+                <button class="tab-btn active" onclick="openTab(event, 'tab1')">Inicio</button> <!-- SECCIÓN 1 -->
+                <button class="tab-btn" onclick="openTab(event, 'tab2')">Servicios</button> <!-- SECCIÓN 2 -->
+                <button class="tab-btn" onclick="openTab(event, 'tab3')">Contacto</button> <!-- SECCIÓN 3 -->
+                <!-- FIN MODIFICAR -->
+            </div>
+
+            <!-- MODIFICAR AQUÍ: Cambia el contenido de cada pestaña -->
+
+            <!-- SECCIÓN 1 -->
+            <div id="tab1" class="tab-content active">
+                <h3>Bienvenido a nuestra plataforma</h3>
+                <p>Esta es la sección de inicio donde puedes encontrar información general sobre nuestros servicios.
+                    Ofrecemos soluciones innovadoras para tus proyectos web.</p>
+                <p>Explora las diferentes pestañas para conocer más sobre lo que hacemos.</p>
+            </div>
+            <!-- SECCIÓN 2 -->
+            <div id="tab2" class="tab-content">
+                <h3>Nuestros Servicios</h3>
+                <ul style="line-height: 2;">
+                    <li>Desarrollo Web Personalizado</li>
+                    <li>Diseño Responsivo</li>
+                    <li>Optimización SEO</li>
+                    <li>Mantenimiento y Soporte</li>
+                </ul>
+            </div>
+            <!-- SECCIÓN 3 -->
+            <div id="tab3" class="tab-content">
+                <h3>Contáctanos</h3>
+                <p><strong>Email:</strong> info@ejemplo.com</p>
+                <p><strong>Teléfono:</strong> +54 11 1234-5678</p>
+                <p><strong>Dirección:</strong> Buenos Aires, Argentina</p>
+            </div>
+            <!-- FIN MODIFICAR -->
+        </div>
+    </div>
+</body>
+
+</html>

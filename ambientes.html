@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mi_pagina.css" />
+    <link rel="stylesheet" href="componentes/carousel/carousel.css" />
+    <script src="componentes/carousel/carousel.js" defer></script>
+    <title>Casteando X Neuquén</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/DIPLI/mi_pagina.html"> INICIO </a>
+      <a href="/DIPLI/modalidades.html">MODALIDADES DE PESCA</a>
+      <a class="navactiva" href="/DIPLI/ambientes.html">AMBIENTES DE PESCA</a>
+      <a href="/DIPLI/links.html">ESPECIES DE INTERES</a>
+      <a href="/DIPLI/contacto.html">FORO/CONTACTO</a>
+    </nav>
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <!-- MODIFICAR AQUÍ: Cambia las imágenes y textos -->
+        <div class="carousel-item active">
+          <img src="/DIPLI/Recursos/alumine.jpg" alt="Aluminé" />
+          <div class="carousel-caption">
+            <a class="btnambientes" href="/DIPLI/ambientes/alumine.html"
+              >Rio <br />
+              Aluminé</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/DIPLI/Recursos/malleo.jpg" alt="Malleo" />
+          <div class="carousel-caption">
+            <a class="btnambientes" href="/DIPLI/ambientes/malleo.html"
+              >Rio <br />Malleo</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/DIPLI/Recursos/limay.jpg" alt="Limay" />
+          <div class="carousel-caption">
+            <a class="btnambientes" href="/DIPLI/ambientes/limay.html"
+              >Rio <br />Limay</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/DIPLI/Recursos/nahueve.jpg" alt="Nahueve" />
+          <div class="carousel-caption">
+            <a class="btnambientes" href="/DIPLI/ambientes/nahueve.html"
+              >Rio <br />Nahueve</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/DIPLI/Recursos/chimehuin.jpg" alt="Chimehuin" />
+          <div class="carousel-caption">
+            <a class="btnambientes" href="/DIPLI/ambientes/chimehuin.html"
+              >Rio <br />Chimehuin</a
+            >
+          </div>
+        </div>
+        <!-- FIN MODIFICAR -->
+
+        <button class="carousel-btn prev" onclick="moveCarousel(-1)">❮</button>
+        <button class="carousel-btn next" onclick="moveCarousel(1)">❯</button>
+
+        <div class="carousel-indicators" id="indicators"></div>
+      </div>
+    </div>
+
+    <footer>
+      <b
+        >Alumnos: Carlos Iván Simon, Romina Mabel Candiano. (Codecrafters
+        R&C)</b
+      >
+    </footer>
+  </body>
+</html>

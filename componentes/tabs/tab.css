@@ -1,0 +1,53 @@
+/* === COMPONENTE 4: TABS === */
+.tabs-container {
+  font-family: "Montserrat", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tabs-nav {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #e0e0e0;
+}
+
+.tab-btn {
+  font-family: "Montserrat", sans-serif;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  transition: all 0.3s;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -3px;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab-btn:hover {
+  color: #2b4f81;
+  background-color: #ffffff;
+}
+
+.tab-btn.active {
+  color: #2b4f81;
+  background-color: #ffffff;
+  border-bottom-color: #153361;
+  font-weight: bold;
+}
+
+.tab-content {
+  display: none;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s;
+}
+
+.tab-content.active {
+  display: block;
+}
